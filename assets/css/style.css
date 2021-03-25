@@ -29,6 +29,10 @@ section {
     height: 100vh;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 /* ============================== Font Styling ============================== */
 
 .white-text {
@@ -155,22 +159,61 @@ h2 {
 	height: 50px;
 }
 
-.main-nav-list>li>a {
-	text-decoration: none;
-	list-style: none;
-	display: inline-flex;
-	text-align: center;
-}
 
-.main-nav-list>li>a>i {
-	font-size: 40px;
-	padding-bottom: 10px;
-}
 
 /* ============================== Main Navbar =============================== */
 
 .main-nav-container {
     background-color: #4c8eb9;
+    height: 76px;
+}
+
+.nav-name-header h2 {
+    font-size: 3rem;
+    font-weight: 600 !important;
+    color: #2b2d42;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+
+.main-nav-list>li>a {
+	list-style: none;
+	display: inline-flex;
+	text-align: center;
+}
+
+.main-nav-item>a:hover {
+	color: #00f7ff;
+	text-decoration: none;
+	text-shadow: 1px 1px 10px #101010;
+}
+
+.main-nav-item>a:hover>i {
+	color: #00f7ff;
+	text-shadow: 1px 1px 10px #101010;
+}
+
+nav a {
+    color: #2b2d42;
+}
+
+.navbar-toggler-icon i {
+    color: #2b2d42;
+    font-size: 25px;
+    height: 25px;
+    width: 25px;
+}
+
+#navbarNavDropdown {
+    background-color: #4c8eb9;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-top: -0.5rem !important;
+}
+
+.navbar button:focus {
+    outline: none;
 }
 
 /* ============================= MEDIA QUERIES ============================== */
