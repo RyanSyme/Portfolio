@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+
+/* ============================== Base Styling ============================== */
+
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+	position: absolute;
+	height: max-content;
+	min-height: 100vh;
+	display: block;
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+	overflow-x: auto;
+	/* background-color: #f1f1f1; */
+}
+
+section {
+	padding: 100px;
+}
+
+.height-100vh {
+    height: 100vh;
+}
+
+/* ============================== Font Styling ============================== */
+
+.white-text {
+	color: #fff;
+}
+
+.black-text {
+	color: #000000;
+}
+
+h1 {
+	font-size: 50px;
+	font-weight: 600;
+}
+
+p {
+	font-size: 16px
+}
+
+.bold {
+	font-weight: 600
+}
+
+/* ================================= Index ================================== */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#index-bg {
+	background: url('../images/indexbg.jpg');
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#index-title {
+	text-align: center;
+	display: inline-table;
+	transform: translatex(50%);
+	transition: 1s ease-in-out;
+}
+
+#index-right-about {
+	opacity: 0;
+	transition: 1s ease-in-out;
+}
+
+#show-about-on-hover:hover>#index-right-about {
+	opacity: 1;
+	transition: 1s ease-in-out;
+}
+
+#index-title>h1,
+h2 {
+	transition: 1s ease-in-out;
+}
+
+#show-about-on-hover:hover>div#index-title>h1 {
+	transform: translatex(-16%)
+}
+
+#show-about-on-hover:hover>div#index-title>h2 {
+	transform: translatex(-20%)
+}
+
+#show-about-on-hover:hover>div#index-title {
+	transform: translatex(20%)
+}
+
+/* =============================== Index Nav ================================ */
+
+.navbar {
+	transition: 1s ease-in-out;
+}
+
+.navbar-nav {
+	flex-direction: row
+}
+
+
+.index-nav-list>li>a {
+	text-decoration: none;
+	list-style: none;
+	display: grid;
+	text-align: center;
+}
+
+.index-nav-list>li>a>i {
+	font-size: 40px;
+	padding-bottom: 10px;
+}
+
+.nav-item {
+	/* padding: 30px; */
+	width: 150px;
+	height: 150px
+}
+
+.nav-item>a {
+	color: inherit;
+}
+
+.nav-item>a:hover {
+	color: #00f7ff;
+	text-decoration: none;
+	text-shadow: 1px 1px 10px #101010;
+}
+
+.nav-item>a:hover>i {
+	color: #00f7ff;
+	font-size: 45px;
+	text-shadow: 1px 1px 10px #101010;
+}
+
+.nav-item>a>i {
+	height: 50px;
+}
+
+.main-nav-list>li>a {
+	text-decoration: none;
+	list-style: none;
+	display: inline-flex;
+	text-align: center;
+}
+
+.main-nav-list>li>a>i {
+	font-size: 40px;
+	padding-bottom: 10px;
+}
+
+/* ============================== Main Navbar =============================== */
+
+.main-nav-container {
+    background-color: #4c8eb9;
+}
+
+/* ============================= MEDIA QUERIES ============================== */
+
+@media (max-width: 576px) {
+	section {
+		padding: 30px 15px;
+	}
+	.center-on-mob {
+		text-align: center
+	}
+	h1 {
+		font-size: 30px;
+	}
+	h2 {
+		font-size: 25px
+	}
+	#index-right-about {
+		display: none;
+	}
+	#index-title {
+		transform: translateY(0%)!important;
+	}
+	.nav-item {
+		width: 90px;
+		height: auto;
+		padding: 40px 0px
+	}
+}
+
+@media (max-width: 768px) {
+    #index-right-about {
+        display: none
+    }
+    #index-title {
+    transform: translateY(0%)!important;
+    }
+    h1 {
+    font-size: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+	#index-title {
+		transform: translateY(100%);
+	}
+	#index-title:hover {
+		transform: translateY(0%);
+	}
+	#show-about-on-hover:hover>div#index-title {
+		transform: translateX(0%);
+	}
+	#show-about-on-hover:hover>div#index-title>h1 {
+		transform: translateX(0%);
+	}
+	#show-about-on-hover:hover>div#index-title>h2 {
+		transform: translateX(0%)
+	}
+	.navbar-nav {
+		flex-direction: row!important;
+	}
+}
