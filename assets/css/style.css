@@ -206,7 +206,8 @@ nav a {
 }
 
 #navbarNavDropdown {
-    background-color: #4c8eb9;
+    /* background-color: #4c8eb9; */
+    background-color: #326270;
     padding-bottom: 1rem;
     padding-top: 1rem;
     margin-top: -0.5rem !important;
