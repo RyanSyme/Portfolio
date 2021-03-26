@@ -5,7 +5,7 @@
 
 html {
 	scroll-behavior: smooth;
-	overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 body {
@@ -37,6 +37,15 @@ a {
 ul {
     list-style-type: none;
     padding-left: 0;
+}
+
+.info-text {
+    max-width: 70%;
+    margin: auto;
+}
+
+.row {
+    max-width: 100%;
 }
 
 /* ============================== Font Styling ============================== */
@@ -225,20 +234,11 @@ nav a {
 
 /* ============================= Skills Section ============================= */
 
-.about-text {
-    margin: 0px 120px;
-}
+
 
 /* ============================= Skills Section ============================= */
 
-.v-rule {
-  border-left: 3px solid green;
-  height: 50px;
-  display: inline-block;
-  border-radius: 50px;
-  margin-bottom: 10px;
-  margin-left: 50px;
-}
+
 /* ============================= MEDIA QUERIES ============================== */
 
 @media (max-width: 576px) {
@@ -265,9 +265,9 @@ nav a {
 		height: auto;
 		padding: 40px 0px
     }
-    
+
     .about-text {
-        margin: 0px 20px;
+        max-width: 90%;
     }
 }
 
@@ -301,5 +301,6 @@ nav a {
 	}
 	.navbar-nav {
 		flex-direction: row!important;
-	}
+    }
+    
 }
