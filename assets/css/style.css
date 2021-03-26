@@ -10,6 +10,7 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
 	position: absolute;
 	height: max-content;
 	min-height: 100vh;
@@ -17,7 +18,7 @@ body {
 	padding: 0;
 	margin: 0;
 	width: 100vw;
-	overflow-x: auto;
+    overflow-x: auto;
 	/* background-color: #f1f1f1; */
 }
 
@@ -31,6 +32,11 @@ section {
 
 a {
     text-decoration: none !important;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
 /* ============================== Font Styling ============================== */
@@ -217,6 +223,22 @@ nav a {
     outline: none;
 }
 
+/* ============================= Skills Section ============================= */
+
+.about-text {
+    margin: 0px 120px;
+}
+
+/* ============================= Skills Section ============================= */
+
+.v-rule {
+  border-left: 3px solid green;
+  height: 50px;
+  display: inline-block;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
 /* ============================= MEDIA QUERIES ============================== */
 
 @media (max-width: 576px) {
@@ -242,7 +264,11 @@ nav a {
 		width: 90px;
 		height: auto;
 		padding: 40px 0px
-	}
+    }
+    
+    .about-text {
+        margin: 0px 20px;
+    }
 }
 
 @media (max-width: 768px) {
