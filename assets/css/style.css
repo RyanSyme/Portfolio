@@ -251,6 +251,12 @@ footer {
     background-color: #d0d3d4;
 }
 
+.portfolio-img {
+    object-fit: contain;
+    width: 40vw;
+    height: 40vh;
+}
+
 /* ============================= MEDIA QUERIES ============================== */
 
 @media (max-width: 576px) {
