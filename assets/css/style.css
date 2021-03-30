@@ -164,15 +164,17 @@ h2 {
 }
 
 .index-nav-item>a:hover {
-	color: #00f7ff;
+    color: #47a7df;
+    font-size: 18px;
+    font-weight: bolder;
 	text-decoration: none;
-	text-shadow: 1px 1px 10px #101010;
+	text-shadow: 1px 1px 5px #000
 }
 
 .index-nav-item>a:hover>i {
-	color: #00f7ff;
-	font-size: 45px;
-	text-shadow: 1px 1px 10px #101010;
+	color: #47a7df;
+	font-size: 50px;
+	text-shadow: 1px 1px 5px #000
 }
 
 .index-nav-item>a>i {
