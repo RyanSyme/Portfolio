@@ -63,10 +63,6 @@ p {
 	color: #fff;
 }
 
-.black-text {
-	color: #000000;
-}
-
 h1 {
 	font-size: 50px;
 	font-weight: 600;
@@ -193,7 +189,7 @@ h2 {
 }
 
 .nav-name-header h2 {
-    font-size: 3rem;
+    font-size: 210%;
     font-weight: 600 !important;
     color: #2b2d42;
     margin-left: 1rem;
@@ -208,20 +204,30 @@ h2 {
 }
 
 .main-nav-item>a:hover {
-	color: #00f7ff;
+	color: #4753df;
+	/* color: #00f7ff; */
 	text-decoration: none;
-	text-shadow: 1px 1px 10px #101010;
+	text-shadow: 1px 1px 5px #fff;
 }
 
 .main-nav-item>a:hover>i {
-	color: #00f7ff;
-	text-shadow: 1px 1px 10px #101010;
+	color: #4753df;
+	/* color: #00f7ff; */
+	text-shadow: 1px 1px 5px #fff;
 }
 
 nav a,
 .social-links {
     color: #2b2d42;
 }
+
+nav a:hover,
+.social-links:hover {
+    color: #4753df;
+    text-shadow: 1px 1px 5px #fff;
+}
+
+
 
 .navbar-toggler-icon i {
     color: #2b2d42;
@@ -241,20 +247,55 @@ nav a,
     outline: none;
 }
 
-/* ============================= Skills Section ============================= */
-
-
-
 /* ============================= Footer ============================= */
 
 footer {
     background-color: #d0d3d4;
 }
 
+/* ========================= Portfolio Page ========================= */
+
 .portfolio-img {
     object-fit: contain;
     width: 40vw;
     height: 40vh;
+}
+
+/* ========================== Contact Page ========================== */
+
+.form-container {
+    margin: 103px 0;
+}
+
+form {
+    background-color: #d0d3d4;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    padding-top: 0;
+}
+
+.contact-form {
+    color: #2b2d42;
+}
+
+.form-boxes {
+    margin-bottom: 2rem;
+}
+
+.btn-contact {
+    background-color: #2b2d42;
+    color: #fff !important;
+}
+
+.btn-contact:hover {
+    background-color: #4753df;
+    /* color: #2b2d42 !important; */
+    /* font-size: large; */
+    font-weight: bolder;
 }
 
 /* ============================= MEDIA QUERIES ============================== */
