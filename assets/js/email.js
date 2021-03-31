@@ -14,8 +14,8 @@ window.onload = function() {
                     .then(function() {
                         alert('Message Sent');
                         // clear form inspired by https://www.geeksforgeeks.org/how-to-clear-form-after-submit-in-javascript-without-using-reset/
-                        document.getElementById('first_name').value=''; 
-                        document.getElementById('last_name').value='';
+                        document.getElementById('full_name').value=''; 
+                        document.getElementById('company_name').value='';
                         document.getElementById('from_email').value='';
                         document.getElementById('phone').value='';
                         document.getElementById('message').value='';
