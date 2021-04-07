@@ -55,6 +55,7 @@ p {
 
 .row {
     max-width: 100%;
+    margin-left: 0px;
 }
 
 /* ============================== Font Styling ============================== */
@@ -257,10 +258,16 @@ footer {
 
 /* ========================= Portfolio Page ========================= */
 
+.portfolio-container {
+    padding-top: 80px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
 .portfolio-img {
+    width: 100%; /* or any custom size */
+    height: 100%; 
     object-fit: contain;
-    width: 40vw;
-    height: 40vh;
 }
 
 /* ========================== Contact Page ========================== */
@@ -302,6 +309,12 @@ form {
 
 /* ============================= MEDIA QUERIES ============================== */
 
+@media (max-width: 425px) {
+    .nav-name-header>h2 {
+        margin-left: 0!important;
+    }
+}
+
 @media (max-width: 576px) {
 	section {
 		padding: 30px 15px;
@@ -332,6 +345,8 @@ form {
     }
 }
 
+
+
 @media (max-width: 768px) {
     #index-right-about {
         display: none
@@ -341,6 +356,10 @@ form {
     }
     h1 {
     font-size: 40px;
+    }
+
+    .center-on-small {
+        text-align: center !important;
     }
 }
 
