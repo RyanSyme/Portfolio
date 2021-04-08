@@ -133,11 +133,11 @@ h2 {
 
 /* =============================== Index Nav ================================ */
 
-.navbar {
+.index-nav {
 	transition: 1s ease-in-out;
 }
 
-.navbar-nav {
+.index-navbar-nav {
 	flex-direction: row
 }
 
@@ -302,9 +302,23 @@ form {
 
 .btn-contact:hover {
     background-color: #4753df;
-    /* color: #2b2d42 !important; */
-    /* font-size: large; */
     font-weight: bolder;
+}
+
+/* ================================= MODAL ================================== */
+
+.modal-header {
+    background-color: #2b2d42;
+    color: #fff !important;
+}
+
+.modal-body {
+    background-color: #d0d3d4;
+}
+
+.modal-footer {
+    background-color: #2b2d42;
+    color: #fff !important;
 }
 
 /* ============================= MEDIA QUERIES ============================== */
@@ -312,6 +326,12 @@ form {
 @media (max-width: 425px) {
     .nav-name-header>h2 {
         margin-left: 0!important;
+    }
+
+    .info-text {
+    max-width: 100%;
+    margin: auto;
+    font-size: 1rem !important;
     }
 }
 
@@ -334,7 +354,7 @@ form {
 	#index-title {
 		transform: translateY(0%) !important;
 	}
-	.nav-item {
+	.index-nav {
 		width: 90px;
 		height: auto;
 		padding: 40px 0px
@@ -361,6 +381,14 @@ form {
     .center-on-small {
         text-align: center !important;
     }
+
+    .fa-2x {
+        font-size: 1rem;
+    }
+
+    #navbarNavDropdown {
+        margin-right: 0 !important;
+    }
 }
 
 @media (max-width: 992px) {
@@ -379,7 +407,7 @@ form {
 	#show-about-on-hover:hover>div#index-title>h2 {
 		transform: translateX(0%)
 	}
-	.navbar-nav {
+	.index-navbar-nav {
 		flex-direction: row!important;
     }
     

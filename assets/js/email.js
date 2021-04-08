@@ -12,7 +12,7 @@ window.onload = function() {
                 // these IDs from the previous steps
                 emailjs.sendForm('contact_visit', 'contact_form', this)
                     .then(function() {
-                        alert('Message Sent');
+                        // alert('Message Sent');
                         // clear form inspired by https://www.geeksforgeeks.org/how-to-clear-form-after-submit-in-javascript-without-using-reset/
                         document.getElementById('full_name').value=''; 
                         document.getElementById('company_name').value='';
@@ -26,3 +26,8 @@ window.onload = function() {
                     
             });
         };
+
+// Bootstrap modal
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
