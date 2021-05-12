@@ -333,6 +333,22 @@ form {
     margin: auto;
     font-size: 1rem !important;
     }
+
+	.index-nav-item {
+		padding-left: 0;
+	}
+
+	.index-navbar-nav {
+		max-width: 100vw;
+	}
+
+	.index-nav {
+		margin-left: 0;
+	}
+
+	.index-nav-container {
+		padding-left: 0;
+	}
 }
 
 @media (max-width: 576px) {
@@ -349,7 +365,7 @@ form {
 		font-size: 25px
 	}
 	#index-right-about {
-		display: none;
+		display: none !important;
 	}
 	#index-title {
 		transform: translateY(0%) !important;
