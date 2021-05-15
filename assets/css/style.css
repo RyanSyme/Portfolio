@@ -270,6 +270,10 @@ footer {
     object-fit: contain;
 }
 
+.website-image:hover {
+    box-shadow: 0 4px 8px 0 rgba(43, 45, 66, 0.5), 0 6px 20px 0 rgba(43, 45, 66, 0.5);
+}
+
 /* ========================== Contact Page ========================== */
 
 .form-container {
